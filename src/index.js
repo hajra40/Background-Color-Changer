@@ -1,17 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import App from './App';
+
+class App extends React.Component {
+
+  state = {
+    color: 'Purple'
+  }
+
+  onColorChange = e => {
+    this.setState({
+      color: e.target.value,
+    })
+  }
+
+  render(){
+    const styleObj = {
+      background: this.state.color
+    };
+    return(
+      <div className="container" style={styleObj}>
+        <div className="card p-4">
+          <h1 className="card title">Enter Color</h1>
+          <input className="input-group my-2"
+          onChange={this.onColorChange}
+          value={this.state.color}
+          type="text"
+          />
+        </div>
+      </div>
+    );
+  }
+}
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App />,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
