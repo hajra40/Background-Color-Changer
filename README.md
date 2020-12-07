@@ -1,3 +1,13 @@
+# Description
+
+This project changes the background color with the color typed in the input.(as shown below)
+
+![Screenshot (43)](https://user-images.githubusercontent.com/68770929/101356172-b1545300-38bd-11eb-819b-a42c295d8bc0.png)
+
+![](https://github.com/hajra40/Background-Color-Changer/blob/master/src/Screenshot%20(42).png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
